@@ -2,11 +2,11 @@
 FROM node:18-alpine
 
 # Рабочая директория
-WORKDIR /app
+WORKDIR /src
 
 # Установка зависимостей
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 
 # Копируем исходники
 COPY . .
