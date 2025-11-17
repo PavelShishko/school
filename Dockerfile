@@ -15,4 +15,4 @@ COPY . .
 RUN npm run build
 
 # Запуск
-CMD ["node", "dist/main.js"]
+CMD ["node", "dist/src/main.js"]
